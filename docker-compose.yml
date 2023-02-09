@@ -1,0 +1,21 @@
+services:
+  database:
+    build: ./database
+    restart: always
+    ports:
+      - "3306:3306"
+#    networks:
+#      - dailytask_net
+
+  #backend:
+  #  build: ./DailyTaskApi
+  #  ports:
+  #    - "8080:8080"
+  #  restart: always
+  #  networks:
+  #    - dailytask_net
+  #  depends_on:
+  #    - database
+
+#networks:
+#  dailytask_net:
